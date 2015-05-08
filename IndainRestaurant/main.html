@@ -1,0 +1,201 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Spicy Hub - Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">      
+	<meta name="author" content="Html5TemplatesDreamweaver.com">
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"> <!-- Remove this Robots Meta Tag, to allow indexing of site -->
+    
+    <link href="scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="scripts/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Icons -->
+    <link href="scripts/icons/general/stylesheets/general_foundicons.css" media="screen" rel="stylesheet" type="text/css" />  
+    <link href="scripts/icons/social/stylesheets/social_foundicons.css" media="screen" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 8]>
+        <link href="scripts/icons/general/stylesheets/general_foundicons_ie7.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="scripts/icons/social/stylesheets/social_foundicons_ie7.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <link rel="stylesheet" href="scripts/fontawesome/css/font-awesome.min.css">
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="scripts/fontawesome/css/font-awesome-ie7.min.css">
+    <![endif]-->
+
+    <link href="scripts/carousel/style.css" rel="stylesheet" type="text/css" />
+    <link href="scripts/camera/css/camera.css" rel="stylesheet" type="text/css" />
+
+    <link href="http://fonts.googleapis.com/css?family=Allura" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Palatino+Linotype" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet" type="text/css">
+
+    <link href="styles/custom.css" rel="stylesheet" type="text/css" />
+	
+<script>
+function showResult(str) {
+  if (str.length==0) { 
+    document.getElementById("livesearch").innerHTML="";
+    document.getElementById("livesearch").style.border="0px";
+    return;
+  }
+  if (window.XMLHttpRequest) {
+     xmlhttp=new XMLHttpRequest();
+  } 
+  xmlhttp.onreadystatechange=function() {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+      document.getElementById("livesearch").innerHTML=xmlhttp.responseText;
+      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+    }
+  }
+  xmlhttp.open("GET","search.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
+</head>
+<body id="pageBody">
+
+<div id="decorative2">
+    <div class="container">
+
+        <div class="divPanel topArea notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+
+                    <div id="divLogo" class="pull-left">
+                        
+						<img src="logo.jpg" id="logo"/> 
+                    </div>
+
+                    <div id="divMenuRight" class="pull-right">
+                    <div class="navbar">
+                        <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                            NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                        </button>
+						
+                        <div class="nav-collapse collapse">
+                           <span> <ul class="nav nav-pills ddmenu">
+                                <li class="dropdown active"><a href="main.html">Home</a></li>
+								<li class="dropdown"><a href="about.html">About Us</a></li>
+                                <li class="dropdown">
+                                    
+                                <li class="dropdown"><a href="gallery.html">Gallery</a></li>
+                                <li class="dropdown"><a href="contact.html">Contact</a></li>
+								
+                            </ul></span>
+							<form>
+<input type="text" size="30" onkeyup="showResult(this.value)" placeholder="Search">
+<div id="livesearch"></div>
+</form>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="decorative1" style="position:relative">
+    <div class="container">
+
+        <div class="divPanel headerArea">
+            <div class="row-fluid">
+                <div class="span12">
+    
+                    <div id="headerSeparator"></div>
+
+                    <div class="row-fluid">
+					<div class="span6">
+
+                            <div id="divHeaderText" class="page-content">
+                                <div id="divHeaderLine1">A Magical Journey from your wish to Our Creation!</div><br />
+                                
+                                
+                            </div>
+
+                        </div>
+                        
+                        <div class="span6">
+                            <!--Edit Camera Slider here-->
+                            <div id="camera_wrap">
+<div data-src="pic1.jpg" ></div><div data-src="pic3.jpg" ></div>
+<div data-src="pic2.jpg" ></div>
+                            </div>
+							<!--End Camera Slider here-->
+
+                        </div>
+                    </div>
+
+                    <div id="headerSeparator2"></div>
+        
+                </div>
+            </div>
+   
+        </div>
+
+    </div>
+</div>
+
+<div id="contentOuterSeparator"></div>
+
+<div class="container">
+
+    
+
+</div>
+
+<div id="footerOuterSeparator"></div>
+
+<div id="divFooter" class="footerArea">
+
+    <div class="container">
+
+        <div class="divPanel">
+
+          
+            <div class="row-fluid">
+                <div class="span6">
+                    <p class="copyright">
+                        Copyright © 2013 Your Company. All Rights Reserved.
+                    </p>
+
+                    <p class="social_bookmarks">
+                        <a href="#"><i class="social foundicon-facebook"></i> Facebook</a>
+			<a href=""><i class="social foundicon-twitter"></i> Twitter</a>
+			<a href="#"><i class="social foundicon-pinterest"></i> Pinterest</a>
+			<!--<a href="#"><i class="social foundicon-rss"></i> Rss</a>-->
+                    </p>
+                </div>
+            </div>
+            <br />
+
+        </div>
+
+    </div>
+    
+</div>
+
+<script src="scripts/jquery.min.js" type="text/javascript"></script> 
+<script src="scripts/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="scripts/default.js" type="text/javascript"></script>
+
+
+<script src="scripts/carousel/jquery.carouFredSel-6.2.0-packed.js" type="text/javascript"></script><script type="text/javascript">$('#list_photos').carouFredSel({ responsive: true, width: '100%', scroll: 2, items: {width: 320,visible: {min: 2, max: 6}} });</script><script src="scripts/camera/scripts/camera.min.js" type="text/javascript"></script>
+<script src="scripts/easing/jquery.easing.1.3.js" type="text/javascript"></script>
+<script type="text/javascript">function startCamera() {$('#camera_wrap').camera({ fx: 'scrollLeft', time: 2000, loader: 'none', playPause: false, navigation: true, height: '65%', pagination: true });}$(function(){startCamera()});</script>
+
+
+</body>
+</html>

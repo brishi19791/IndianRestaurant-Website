@@ -1,0 +1,22 @@
+<!--  Edited by XMLSpy  -->
+<pages>
+
+<link>
+<title>Spice Contact</title>
+<url>
+contact.html
+</url>
+</link>
+<link>
+<title>Spice Menu</title>
+<url>gallery.html</url>
+</link>
+<link>
+<title>Spice About</title>
+<url>about.html</url>
+</link>
+<link>
+<title>Spice Home</title>
+<url>main.html</url>
+</link>
+</pages>
